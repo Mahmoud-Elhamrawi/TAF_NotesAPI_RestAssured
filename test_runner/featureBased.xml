@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SuiteTC" verbose="1">
+    <test name="FeaturedBased">
+        <classes>
+            <class name="TestCases.TC01_RegisterTest"/>
+            <class name="TestCases.TC02_LoginTest"/>
+            <class name="TestCases.TC03_NotesTC"/>
+        </classes>
+    </test>
+
+
+</suite>
