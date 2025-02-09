@@ -4,6 +4,7 @@ package TestCases;
 import API_POJO.Login;
 import API_POJO.Notes;
 import API_POJO.Register;
+import LIstener.IInvokedListener;
 import Utilities.JasonDataUtils;
 import Utilities.LogUtility;
 import io.qameta.allure.Description;
@@ -12,6 +13,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -19,6 +21,8 @@ import java.time.Instant;
 
 import static io.restassured.RestAssured.given;
 
+
+@Listeners(IInvokedListener.class)
 public class TC03_NotesAPI {
 
 public static String token="";

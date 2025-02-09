@@ -1,0 +1,210 @@
+[INFO] 09-02-2025 14:01:20 [main] [TestCases.TC01_UserAPI_RegisterTest.in_ValidRegisterTC1(TC01_UserAPI_RegisterTest.java:80)] - Response Status Code: 400
+[INFO] 09-02-2025 14:01:20 [main] [TestCases.TC01_UserAPI_RegisterTest.in_ValidRegisterTC1(TC01_UserAPI_RegisterTest.java:81)] - Response Body:{
+    "success": false,
+    "status": 400,
+    "message": "A valid email address is required"
+}
+[INFO] 09-02-2025 14:01:22 [main] [TestCases.TC01_UserAPI_RegisterTest.in_ValidRegisterTC2(TC01_UserAPI_RegisterTest.java:107)] - Response Status Code: 409
+[INFO] 09-02-2025 14:01:22 [main] [TestCases.TC01_UserAPI_RegisterTest.in_ValidRegisterTC2(TC01_UserAPI_RegisterTest.java:108)] - Response Body:{
+    "success": false,
+    "status": 409,
+    "message": "An account already exists with the same email address"
+}
+[INFO] 09-02-2025 14:01:22 [main] [TestCases.TC01_UserAPI_RegisterTest.in_ValidRegisterTC3(TC01_UserAPI_RegisterTest.java:134)] - Response Status Code: 400
+[INFO] 09-02-2025 14:01:22 [main] [TestCases.TC01_UserAPI_RegisterTest.in_ValidRegisterTC3(TC01_UserAPI_RegisterTest.java:135)] - Response Body:{
+    "success": false,
+    "status": 400,
+    "message": "A valid email address is required"
+}
+[INFO] 09-02-2025 14:01:23 [main] [TestCases.TC01_UserAPI_RegisterTest.validRegisterTC(TC01_UserAPI_RegisterTest.java:51)] - Response Status Code: 201
+[INFO] 09-02-2025 14:01:23 [main] [TestCases.TC01_UserAPI_RegisterTest.validRegisterTC(TC01_UserAPI_RegisterTest.java:52)] - Response Body:{
+    "success": true,
+    "status": 201,
+    "message": "User account created successfully",
+    "data": {
+        "id": "67a899056a971c0284795170",
+        "name": "mahmoud",
+        "email": "test1739102482718@gmail.com"
+    }
+}
+[INFO] 09-02-2025 14:01:23 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC1(TC02_UserAPI_LoginTest.java:54)] - Response Status Code: 201
+[INFO] 09-02-2025 14:01:23 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC1(TC02_UserAPI_LoginTest.java:55)] - Response Body:{
+    "success": true,
+    "status": 201,
+    "message": "User account created successfully",
+    "data": {
+        "id": "67a899066a971c0284795173",
+        "name": "mahmoud",
+        "email": "test1739102483413@gmail.com"
+    }
+}
+[INFO] 09-02-2025 14:01:24 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC1(TC02_UserAPI_LoginTest.java:72)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:24 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC1(TC02_UserAPI_LoginTest.java:73)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Login successful",
+    "data": {
+        "id": "67a899066a971c0284795173",
+        "name": "mahmoud",
+        "email": "test1739102483413@gmail.com",
+        "token": "22bb9c04a9dc489d9b362fde3feb2c673f7cad33f5764592aec2bf5daf257ec2"
+    }
+}
+[INFO] 09-02-2025 14:01:24 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC1(TC02_UserAPI_LoginTest.java:90)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:24 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC1(TC02_UserAPI_LoginTest.java:91)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Profile successful",
+    "data": {
+        "id": "67a899066a971c0284795173",
+        "name": "mahmoud",
+        "email": "test1739102483413@gmail.com"
+    }
+}
+[INFO] 09-02-2025 14:01:25 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC1(TC02_UserAPI_LoginTest.java:111)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:25 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC1(TC02_UserAPI_LoginTest.java:112)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Profile updated successful",
+    "data": {
+        "id": "67a899066a971c0284795173",
+        "name": "mahmoudTester",
+        "email": "test1739102483413@gmail.com",
+        "phone": "01278888888",
+        "company": "testCompany"
+    }
+}
+[INFO] 09-02-2025 14:01:26 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC2(TC02_UserAPI_LoginTest.java:200)] - Response Status Code: 401
+[INFO] 09-02-2025 14:01:26 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC2(TC02_UserAPI_LoginTest.java:201)] - Response Body:{
+    "success": false,
+    "status": 401,
+    "message": "Incorrect email address or password"
+}
+[INFO] 09-02-2025 14:01:28 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC3(TC02_UserAPI_LoginTest.java:160)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:28 [main] [TestCases.TC02_UserAPI_LoginTest.integrationTC3(TC02_UserAPI_LoginTest.java:161)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Account successfully deleted"
+}
+[INFO] 09-02-2025 14:01:28 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:53)] - Response Status Code: 201
+[INFO] 09-02-2025 14:01:28 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:54)] - Response Body:{
+    "success": true,
+    "status": 201,
+    "message": "User account created successfully",
+    "data": {
+        "id": "67a8990b6a971c028479518f",
+        "name": "mahmoud",
+        "email": "test1739102488061@gmail.com"
+    }
+}
+[INFO] 09-02-2025 14:01:29 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:70)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:29 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:71)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Login successful",
+    "data": {
+        "id": "67a8990b6a971c028479518f",
+        "name": "mahmoud",
+        "email": "test1739102488061@gmail.com",
+        "token": "3c743e8fd6c84f87820030a036a1dae0dd5035a286fe43cdafbfde99343cbbb2"
+    }
+}
+[INFO] 09-02-2025 14:01:29 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:89)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:29 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:90)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Note successfully created",
+    "data": {
+        "id": "67a8990c6a971c0284795197",
+        "title": "testing",
+        "description": "project version1739102489160",
+        "category": "Personal",
+        "completed": false,
+        "created_at": "2025-02-09T12:01:16.097Z",
+        "updated_at": "2025-02-09T12:01:16.097Z",
+        "user_id": "67a8990b6a971c028479518f"
+    }
+}
+[INFO] 09-02-2025 14:01:30 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:111)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:30 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:112)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Note successfully retrieved",
+    "data": {
+        "id": "67a8990c6a971c0284795197",
+        "title": "testing",
+        "description": "project version1739102489160",
+        "category": "Personal",
+        "completed": false,
+        "created_at": "2025-02-09T12:01:16.097Z",
+        "updated_at": "2025-02-09T12:01:16.097Z",
+        "user_id": "67a8990b6a971c028479518f"
+    }
+}
+[INFO] 09-02-2025 14:01:30 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:131)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:30 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:132)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Note successfully Updated",
+    "data": {
+        "id": "67a8990c6a971c0284795197",
+        "title": "testing",
+        "description": "project version1739102489160",
+        "category": "Personal",
+        "completed": true,
+        "created_at": "2025-02-09T12:01:16.097Z",
+        "updated_at": "2025-02-09T12:01:17.037Z",
+        "user_id": "67a8990b6a971c028479518f"
+    }
+}
+[INFO] 09-02-2025 14:01:31 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:148)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:31 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:149)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Note successfully deleted"
+}
+[INFO] 09-02-2025 14:01:31 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:165)] - Response Status Code: 404
+[INFO] 09-02-2025 14:01:31 [main] [TestCases.TC03_NotesAPI.end2end1(TC03_NotesAPI.java:166)] - Response Body:{
+    "success": false,
+    "status": 404,
+    "message": "No note was found with the provided ID, Maybe it was deleted"
+}
+[INFO] 09-02-2025 14:01:32 [main] [TestCases.TC03_NotesAPI.end2end2(TC03_NotesAPI.java:193)] - Response Status Code: 201
+[INFO] 09-02-2025 14:01:32 [main] [TestCases.TC03_NotesAPI.end2end2(TC03_NotesAPI.java:194)] - Response Body:{
+    "success": true,
+    "status": 201,
+    "message": "User account created successfully",
+    "data": {
+        "id": "67a8990e6a971c02847951a4",
+        "name": "mahmoud",
+        "email": "test1739102491496@gmail.com"
+    }
+}
+[INFO] 09-02-2025 14:01:32 [main] [TestCases.TC03_NotesAPI.end2end2(TC03_NotesAPI.java:212)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:32 [main] [TestCases.TC03_NotesAPI.end2end2(TC03_NotesAPI.java:213)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Login successful",
+    "data": {
+        "id": "67a8990e6a971c02847951a4",
+        "name": "mahmoud",
+        "email": "test1739102491496@gmail.com",
+        "token": "718620655dcf4567a66a2c640a28eec582b3a6d3667d404dabd412635182943c"
+    }
+}
+[INFO] 09-02-2025 14:01:33 [main] [TestCases.TC03_NotesAPI.end2end2(TC03_NotesAPI.java:231)] - Response Status Code: 200
+[INFO] 09-02-2025 14:01:33 [main] [TestCases.TC03_NotesAPI.end2end2(TC03_NotesAPI.java:232)] - Response Body:{
+    "success": true,
+    "status": 200,
+    "message": "Note successfully created",
+    "data": {
+        "id": "67a8990f6a971c02847951ac",
+        "title": "testing",
+        "description": "project version1739102492582",
+        "category": "Personal",
+        "completed": false,
+        "created_at": "2025-02-09T12:01:19.527Z",
+        "updated_at": "2025-02-09T12:01:19.527Z",
+        "user_id": "67a8990e6a971c02847951a4"
+    }
+}

@@ -9,13 +9,17 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+import LIstener.IInvokedListener;
 import java.io.IOException;
 import java.time.Instant;
 
 import static io.restassured.RestAssured.given;
 
+
+
+@Listeners(IInvokedListener.class)
 public class TC01_UserAPI_RegisterTest {
 
     public static String email ="";
