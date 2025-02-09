@@ -1,15 +1,13 @@
 package TestCases;
 
-import API_POJO.Login;
 import API_POJO.Register;
 import Utilities.JasonDataUtils;
-import com.beust.ah.A;
+import Utilities.LogUtility;
 import io.qameta.allure.Description;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,7 +16,7 @@ import java.time.Instant;
 
 import static io.restassured.RestAssured.given;
 
-public class TC01_RegisterTest {
+public class TC01_UserAPI_RegisterTest {
 
     public static String email ="";
 
@@ -28,6 +26,7 @@ public class TC01_RegisterTest {
     {
         RestAssured.baseURI="https://practice.expandtesting.com/notes/api";
     }
+
 
     @Description("Apply component testing level ")
     @Test
@@ -44,8 +43,9 @@ public class TC01_RegisterTest {
                 .body(register)
                 .when().post("/{user}/{register}");
 
-       //Response Data
-        res.prettyPrint() ;
+        //logs
+        LogUtility.info("Response Status Code: " +res.statusCode() );
+        LogUtility.info("Response Body:"+ res.prettyPrint());
 
         //Assertion
         Assert.assertEquals(res.statusCode(), 201 );
@@ -55,7 +55,6 @@ public class TC01_RegisterTest {
 
         email = res.body().jsonPath().get("data.email");
     }
-
 
 
     @Description("register with invalid empty format")
@@ -72,8 +71,10 @@ public class TC01_RegisterTest {
                 .body(register)
                 .when().post("/{user}/{register}");
 
-      //Response Data
-        res.prettyPrint() ;
+
+        //logs
+        LogUtility.info("Response Status Code: " +res.statusCode() );
+        LogUtility.info("Response Body:"+ res.prettyPrint());
 
       //Assertion
         Assert.assertEquals(res.statusCode(), 400,"Expected status code to be 400");
@@ -97,15 +98,16 @@ public class TC01_RegisterTest {
                 .body(register)
                 .when().post("/{user}/{register}");
 
-        //response data
-        res.prettyPrint() ;
+
+        //logs
+        LogUtility.info("Response Status Code: " +res.statusCode() );
+        LogUtility.info("Response Body:"+ res.prettyPrint());
 
         //Assertion
         Assert.assertEquals(res.statusCode(), 409 );
         Assert.assertEquals(res.body().jsonPath().get("message"),"An account already exists with the same email address");
 
     }
-
 
 
     @Description("register with missing required field")
@@ -123,14 +125,18 @@ public class TC01_RegisterTest {
                 .body(register)
                 .when().post("/{user}/{register}");
 
-        // response
-        res.prettyPrint() ;
+
+        //logs
+        LogUtility.info("Response Status Code: " +res.statusCode() );
+        LogUtility.info("Response Body:"+ res.prettyPrint());
 
         //Assertion
         Assert.assertEquals(res.statusCode(), 400 ,"Expected status code to be 400");
         Assert.assertEquals(res.body().jsonPath().get("message"),"A valid email address is required");
 
     }
+
+
 
 
 }

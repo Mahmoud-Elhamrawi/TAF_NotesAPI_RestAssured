@@ -3,9 +3,9 @@
 <suite name="SuiteTC" verbose="1">
     <test name="FeaturedBased">
         <classes>
-            <class name="TestCases.TC01_RegisterTest"/>
-            <class name="TestCases.TC02_LoginTest"/>
-            <class name="TestCases.TC03_NotesTC"/>
+            <class name="TestCases.TC01_UserAPI_RegisterTest"/>
+            <class name="TestCases.TC02_UserAPI_LoginTest"/>
+            <class name="TestCases.TC03_NotesAPI"/>
         </classes>
     </test>
 
